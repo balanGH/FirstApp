@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">First App</string>
+    <!-- Car Brands Array -->
+        <string-array name="car_brands">
+            <item>Toyota</item>
+            <item>Ford</item>
+            <item>Honda</item>
+            <item>BMW</item>
+        </string-array>
+
+        <!-- Car Models Array -->
+        <string-array name="car_models">
+            <item>Corolla</item>
+            <item>Focus</item>
+            <item>Civic</item>
+            <item>Series 3</item>
+        </string-array>
+
+        <!-- Fuel Modes Array -->
+        <string-array name="fuel_modes">
+            <item>Petrol</item>
+            <item>Diesel</item>
+            <item>Electric</item>
+            <item>Hybrid</item>
+        </string-array>
+</resources>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomePage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Sign Out Button -->
+        <Button
+            android:id="@+id/signout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="9dp"
+            android:text="Sign Out" />
+
+        <!-- Go To Details Button -->
+        <Button
+            android:id="@+id/goToDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signout"
+            android:layout_marginTop="-48dp"
+            android:text="Go to Details" />
+
+        <!-- Navigate to Map Button -->
+        <Button
+            android:id="@+id/nav_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goToDetails"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="27dp"
+            android:text="Navigate to Map" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/service_form_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Car Service Requirements"
+            android:textSize="20sp"
+            android:layout_below="@id/nav_map"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="16dp" />
+
+        <!-- Checkboxes -->
+        <CheckBox
+            android:id="@+id/checkbox_engine_oil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Engine Oil Change"
+            android:layout_below="@id/service_form_title"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_tire_puncture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tire Puncture"
+            android:layout_below="@id/checkbox_engine_oil"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_dent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dent"
+            android:layout_below="@id/checkbox_tire_puncture"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_cleaning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cleaning"
+            android:layout_below="@id/checkbox_dent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_brake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brake"
+            android:layout_below="@id/checkbox_cleaning"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp" />
+
+        <!-- Total Cost -->
+        <TextView
+            android:id="@+id/total_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total: ₹0"
+            android:textSize="18sp"
+            android:layout_below="@id/checkbox_brake"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" />
+
+        <!-- Date Picker -->
+        <TextView
+            android:id="@+id/date_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date"
+            android:layout_below="@id/total_cost"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" />
+
+        <DatePicker
+            android:id="@+id/date_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date_label"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp" />
+
+        <!-- Select Service Center -->
+        <Button
+            android:id="@+id/select_location_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Service Center"
+            android:layout_below="@id/date_picker"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submit_service_form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_below="@id/select_location_btn"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" />
+
+        <!-- Notification Button -->
+        <Button
+            android:id="@+id/notify_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notify Me"
+            android:layout_below="@id/submit_service_form"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" />
+
+    </RelativeLayout>
+</ScrollView>

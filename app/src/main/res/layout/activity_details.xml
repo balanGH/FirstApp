@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Details">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Navigation Bar -->
+        <Button
+            android:id="@+id/nav_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="16dp"/>
+
+        <Button
+            android:id="@+id/nav_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Map"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/nav_home"
+            android:layout_margin="16dp"/>
+
+        <Button
+            android:id="@+id/nav_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/nav_map"
+            android:layout_margin="16dp"/>
+
+        <!-- Car Brand Spinner -->
+        <Spinner
+            android:id="@+id/carBrandSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nav_details"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Car Model Spinner -->
+        <Spinner
+            android:id="@+id/carModelSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/carBrandSpinner"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Fuel Mode Spinner -->
+        <Spinner
+            android:id="@+id/fuelModeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/carModelSpinner"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_below="@id/fuelModeSpinner"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</ScrollView>
